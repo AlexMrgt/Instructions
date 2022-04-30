@@ -213,7 +213,7 @@ const Main = () => {
 
                                     <div className='control-container'>
                                         <label className='label-text' htmlFor='adhesivePlaster'>
-                                            Платырь
+                                            Пластырь
                                         </label>
                                         <input
                                             id='adhesivePlaster'
