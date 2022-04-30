@@ -43,6 +43,14 @@ function Questions() {
 
     {
       id: null,
+      question: 'Сколько стоят билеты?',
+      answer: 'В одну сторону 98 рублей. Так что захватите 200 на туда и обратно',
+      additionalAnswer: '',
+      img: ''
+    },
+
+    {
+      id: null,
       question: 'А когда электричка?',
       answer: 'Посадка начинается в 8:55',
       additionalAnswer: '',
