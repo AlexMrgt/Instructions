@@ -1,0 +1,12 @@
+
+  
+  @font-face {
+
+    font-family: 'Nanito';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("Nunito-VariableFont_wght.ttf") format('truetype');
+         /*url("Inter-Black.woff?v=3.15") format("woff");*/
+  }
+  
