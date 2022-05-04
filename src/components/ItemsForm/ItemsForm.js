@@ -8,29 +8,25 @@ export const ItemsForm = () => {
 
     let initialValues = {
 
-        foodInstructions: {
+    
             water: '',
             food: '',
-        },
 
-        wearInstructions: {
             top: '',
             bottom: '',
             shoes: '',
             comfortableShoes: '',
-        },
-
-        otherInstructuins: {
+    
             backpack: '',
             repellent: '',
             adhesivePlaster: '',
             painkiller: '',
             mat: '',
-        },
+      
 
-        girlsInstructuins: {
+     
             nails: ''
-        }
+      
 
     }
 
@@ -65,10 +61,10 @@ export const ItemsForm = () => {
                                         id='water'
                                         type="checkbox"
                                         name="water"
-                                        checked={!!values.foodInstructions.water}
+                                        checked={!!values.water}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
-                                        value={values.foodInstructions.water}
+                                        value={values.water}
                                     />
 
                                 </div>
@@ -81,10 +77,10 @@ export const ItemsForm = () => {
                                         id='food'
                                         type="checkbox"
                                         name="food"
-                                        checked={!!values.foodInstructions.food}
+                                        checked={!!values.food}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
-                                        value={values.foodInstructions.food}
+                                        value={values.food}
                                     />
 
                                 </div>
@@ -112,6 +108,7 @@ export const ItemsForm = () => {
                                         id='top'
                                         type="checkbox"
                                         name="top"
+                                        checked={!!values.top}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.top}
@@ -127,6 +124,7 @@ export const ItemsForm = () => {
                                         id='bottom'
                                         type="checkbox"
                                         name="bottom"
+                                        checked={!!values.bottom}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.bottom}
@@ -142,6 +140,7 @@ export const ItemsForm = () => {
                                         id='shoes'
                                         type="checkbox"
                                         name="shoes"
+                                        checked={!!values.shoes}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.shoes}
@@ -159,6 +158,7 @@ export const ItemsForm = () => {
                                         name="comfortableShoes"
                                         onChange={handleChange}
                                         onBlur={handleBlur}
+                                        checked={!!values.comfortableShoes}
                                         value={values.comfortableShoes}
                                     />
 
@@ -186,6 +186,7 @@ export const ItemsForm = () => {
                                         id='backpack'
                                         type="checkbox"
                                         name="backpack"
+                                        checked={!!values.backpack}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.backpack}
@@ -201,6 +202,7 @@ export const ItemsForm = () => {
                                         id='repellent'
                                         type="checkbox"
                                         name="repellent"
+                                        checked={!!values.repellent}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.repellent}
@@ -218,6 +220,7 @@ export const ItemsForm = () => {
                                         name="adhesivePlaster"
                                         onChange={handleChange}
                                         onBlur={handleBlur}
+                                        checked={!!values.adhesivePlaster}
                                         value={values.adhesivePlaster}
                                     />
 
@@ -232,6 +235,7 @@ export const ItemsForm = () => {
                                         type="checkbox"
                                         name="painkiller"
                                         onChange={handleChange}
+                                        checked={!!values.painkiller}
                                         onBlur={handleBlur}
                                         value={values.painkiller}
                                     />
@@ -247,6 +251,7 @@ export const ItemsForm = () => {
                                         type="checkbox"
                                         name="mat"
                                         onChange={handleChange}
+                                        checked={!!values.mat}
                                         onBlur={handleBlur}
                                         value={values.mat}
                                     />
@@ -270,6 +275,7 @@ export const ItemsForm = () => {
                                         id='nails'
                                         type="checkbox"
                                         name="nails"
+                                        checked={!!values.nails}
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.nails}
