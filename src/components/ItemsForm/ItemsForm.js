@@ -10,7 +10,7 @@ export const ItemsForm = () => {
 
         foodInstructions: {
             water: '',
-            food: 'false',
+            food: '',
         },
 
         wearInstructions: {
