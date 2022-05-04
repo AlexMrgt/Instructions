@@ -16,7 +16,7 @@ function Questions() {
     {
       id: null,
       question: 'Какого числа выезд?',
-      answer: 'На данный момент день выезда - 7 мая 2022 года',
+      answer: 'На данный момент день выезда - 8 мая 2022 года',
       additionalAnswer: '',
       img: ''
     },
@@ -185,11 +185,11 @@ function Questions() {
             {question.img
               ?
               <div className='questions__img-container'>
-                <img onClick={onImagelick} className='questions__img' src={question.img} />
+                <img onClick={onImagelick} className='questions__img' alt='изображение' src={question.img} />
               </div>
               : null}
             {question.additionalAnswer ? <h2 className='questions__subtitle'>  {question.additionalAnswer} </h2> : null}
-            {question.linkData ? <a target='_blank' href={question.linkData.link} className='questions__link'>{question.linkData.text}</a> : null}
+            {question.linkData ? <a target='_blank' rel="noreferrer"  href={question.linkData.link} className='questions__link'>{question.linkData.text}</a> : null}
 
           </div>
 
