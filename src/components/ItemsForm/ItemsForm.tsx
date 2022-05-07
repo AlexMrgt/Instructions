@@ -41,11 +41,9 @@ export const ItemsForm: React.FC = () => {
             return 100
         }
 
-        let part = Math.floor(100 / args.length);
-
+        const part = Math.floor(100 / args.length);
         let res = 0;
 
-        console.log(part)
         args.forEach((arg) => {
             if (arg === true) {
                 res = res + part;
