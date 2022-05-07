@@ -1,0 +1,12 @@
+.absolute-wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+@media screen and (max-width: 1230px) {
+    .absolute-wrapper{
+        display: none;
+    }
+}
