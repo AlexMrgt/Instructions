@@ -1,0 +1,63 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  background-color: white;
+  gap: 24px;
+}
+
+.form__part {
+  z-index:2;
+  position: relative;
+  padding: 16px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.controlls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.control-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form-text {
+  font-size: 20px;
+}
+
+.form__filler{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(3, 252, 111, .3);
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+}
+
+.label-text {
+  font-size: 20px;
+  justify-self: flex-start;
+  order: 2;
+  cursor: pointer;
+}
+
+
+
+
+.sad-container {
+  margin-top: 16px;
+  width: 200px;
+}
+
+.sad-img {
+  width: 100%;
+}
+
+

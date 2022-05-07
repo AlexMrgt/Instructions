@@ -1,8 +1,4 @@
  
-
-body {
-  background-color: b;
-}
 .questions {
   display: flex;
   flex-direction: column;
@@ -11,14 +7,12 @@ body {
 }
 
 .questions__item {
-  /* border: 1px solid slategray; */
   border-radius: 16px;
 }
 
 .questions__question-container {
   padding: 24px;
   background-color: rgba(255,127,80, .7);
-  /* border: 1px solid black; */
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
