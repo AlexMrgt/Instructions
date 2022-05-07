@@ -2,39 +2,64 @@ import React from 'react'
 import { Field, Form, Formik } from 'formik';
 import pepe from '../../images/pepe.png';
 
-export const ItemsForm = () => {
+import './ItemsForm.css'
 
-    function handleSubmit(values){}
+export const ItemsForm: React.FC = () => {
+
+    console.error('этот компонент требует рефактора в TS')
+
+    function handleSubmit(values: any) { }
 
     let initialValues = {
 
-    
-            water: '',
-            food: '',
 
-            top: '',
-            bottom: '',
-            shoes: '',
-            comfortableShoes: '',
-    
-            backpack: '',
-            repellent: '',
-            adhesivePlaster: '',
-            painkiller: '',
-            mat: '',
-      
+        water: '',
+        food: '',
 
-     
-            nails: ''
-      
+        top: '',
+        bottom: '',
+        shoes: '',
+        comfortableShoes: '',
 
+        backpack: '',
+        repellent: '',
+        adhesivePlaster: '',
+        painkiller: '',
+        mat: '',
+
+
+
+        nails: ''
+
+
+    }
+
+    function calcCheckParts(...args: boolean[]) {
+
+        // если все true
+        if (!args.some(arg => arg === false)) {
+            return 100
+        }
+
+        let part = Math.floor(100 / args.length);
+
+        let res = 0;
+
+        console.log(part)
+        args.forEach((arg) => {
+            if (arg === true) {
+                res = res + part;
+            }
+        })
+
+        return res;
     }
 
     return (
 
         <Formik
             initialValues={initialValues}
-
+            onSubmit={handleSubmit}
         >
             {
                 ({
@@ -42,9 +67,11 @@ export const ItemsForm = () => {
                     handleChange,
                     handleBlur }) => (
 
-                    <Form className='form' onSubmit={handleSubmit}>
+                    <Form className='form' >
 
                         <article className='form__part' id='food-instr'>
+
+                            <div className='form__filler' style={{ height: `${calcCheckParts(!!values.water, !!values.food)}%` }} ></div>
 
                             <h3>Перекус</h3>
 
@@ -90,6 +117,8 @@ export const ItemsForm = () => {
                         </article>
 
                         <article className='form__part' id='wear-instr'>
+
+                        <div className='form__filler' style={{ height: `${calcCheckParts(!!values.top, !!values.bottom, !!values.shoes, !!values.comfortableShoes)}%` }} ></div>
 
                             <h3>Одежда</h3>
 
@@ -169,6 +198,8 @@ export const ItemsForm = () => {
                         </article>
 
                         <article className='form__part' id='other-instr'>
+
+                        <div className='form__filler' style={{ height: `${calcCheckParts(!!values.backpack, !!values.repellent, !!values.adhesivePlaster, !!values.painkiller, !!values.mat )}%` }} ></div>
 
                             <h3>Другое</h3>
 
@@ -262,6 +293,8 @@ export const ItemsForm = () => {
 
                         <article className='form__part' id='girl-instr'>
 
+                        <div className='form__filler' style={{ height: `${calcCheckParts(!!values.nails )}%` }} ></div>
+
                             <h3>Девушкам</h3>
 
                             <div className='controlls'>
@@ -286,7 +319,7 @@ export const ItemsForm = () => {
                             </div>
 
                             <div className='sad-container' >
-                                <img className='sad-img' src={pepe} />
+                                <img className='sad-img' src={pepe} alt='sad pepe' />
 
                             </div>
 
@@ -298,7 +331,7 @@ export const ItemsForm = () => {
 
 
         </Formik>
-        
+
     )
 }
 

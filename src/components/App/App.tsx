@@ -1,9 +1,7 @@
 import Main from '../Main/Main';
 import './App.css';
 
-function App() {
-
-  const isModalOpen = false;
+const App: React.FC = () => {
 
   return (
     <Main />
