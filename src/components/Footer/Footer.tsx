@@ -14,7 +14,6 @@ export const Footer: React.FC = () => {
 
     useEffect(() => {
 
-console.warn(size.width)
         if (size.width < 1230 ) {
             setisShowApprovedBanner(true)
         }

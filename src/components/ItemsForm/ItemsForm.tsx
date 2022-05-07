@@ -6,8 +6,6 @@ import './ItemsForm.css'
 
 export const ItemsForm: React.FC = () => {
 
-    console.error('этот компонент требует рефактора в TS')
-
     function handleSubmit(values: any) { }
 
     let initialValues = {
