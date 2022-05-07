@@ -32,6 +32,7 @@
 }
 
 .form__filler{
+  transition: all .3s;
   position: absolute;
   bottom: 0;
   left: 0;
