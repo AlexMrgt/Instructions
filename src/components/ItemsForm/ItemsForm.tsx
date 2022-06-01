@@ -24,7 +24,7 @@ export const ItemsForm: React.FC = () => {
         adhesivePlaster: '',
         painkiller: '',
         mat: '',
-
+        disinfectantLiquid:'',
 
 
         nails: ''
@@ -72,7 +72,7 @@ export const ItemsForm: React.FC = () => {
                             <h3>Перекус</h3>
 
                             <p className='form-text'> Из питья лучше взять термос с чаем и бутылку-другую воды.</p>
-                            <p className='form-text'>  Из еды можно взять фрукты, бутерброды, вареные яйца. Жареное не желательно.</p>
+                            <p className='form-text'>  Из еды можно взять фрукты, бутерброды, вареные яйца, рис. Жареное не желательно.</p>
 
                             <div className='controlls'>
 
@@ -121,7 +121,7 @@ export const ItemsForm: React.FC = () => {
                             <p className='form-text'>
                                 Одежда должна быть легкой, спортивной и такой, которую не очень жалко слегка запачкать - скалы есть скалы.
                             </p>
-                            <p className='form-text'> Кстати утром будет где-то +8, так что куртку/кофту легкую тоже надо не забыть</p>
+                            <p className='form-text'> Кстати утром будет где-то +7-10, так что куртку/кофту легкую тоже надо не забыть</p>
 
                             <div className='controlls'>
 
@@ -195,7 +195,7 @@ export const ItemsForm: React.FC = () => {
 
                         <article className='form__part' id='other-instr'>
 
-                        <div className='form__filler' style={{ height: `${calcCheckParts(!!values.backpack, !!values.repellent, !!values.adhesivePlaster, !!values.painkiller, !!values.mat )}%` }} ></div>
+                        <div className='form__filler' style={{ height: `${calcCheckParts(!!values.backpack, !!values.repellent, !!values.adhesivePlaster, !!values.disinfectantLiquid, !!values.painkiller, !!values.mat )}%` }} ></div>
 
                             <h3>Другое</h3>
 
@@ -265,6 +265,22 @@ export const ItemsForm: React.FC = () => {
                                         checked={!!values.painkiller}
                                         onBlur={handleBlur}
                                         value={values.painkiller}
+                                    />
+
+                                </div>
+
+                                <div className='control-container'>
+                                    <label className='label-text' htmlFor='disinfectantLiquid'>
+                                        Йод/зеленка/иная обеззараживающая жидкость (тож на всякий)
+                                    </label>
+                                    <Field
+                                        id='disinfectantLiquid'
+                                        type="checkbox"
+                                        name="disinfectantLiquid"
+                                        onChange={handleChange}
+                                        checked={!!values.disinfectantLiquid}
+                                        onBlur={handleBlur}
+                                        value={values.disinfectantLiquid}
                                     />
 
                                 </div>
