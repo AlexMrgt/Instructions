@@ -8,7 +8,7 @@ const App: React.FC = () => {
     <div>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/for-you" element={<Fairytale />} />
+        {/* <Route path="/for-you" element={<Fairytale />} /> */}
       </Routes>
     </div>
   );
