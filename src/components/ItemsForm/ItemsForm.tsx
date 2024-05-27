@@ -72,7 +72,7 @@ export const ItemsForm: React.FC = () => {
                             <h3>Перекус</h3>
 
                             <p className='form-text'> Из питья лучше взять термос с чаем и бутылку-другую воды.</p>
-                            <p className='form-text'>  Из еды можно взять фрукты, бутерброды, вареные яйца, рис. Жареное не желательно.</p>
+                            <p className='form-text'>  Из еды можно взять фрукты, бутерброды, вареные яйца, рис. Жареное/газированное нежелательно.</p>
 
                             <div className='controlls'>
 
@@ -223,7 +223,7 @@ export const ItemsForm: React.FC = () => {
 
                                 <div className='control-container'>
                                     <label className='label-text' htmlFor='repellent'>
-                                        Репелент от клещей
+                                        Репелент от клещей + Репелент от комаров
                                     </label>
                                     <Field
                                         id='repellent'
